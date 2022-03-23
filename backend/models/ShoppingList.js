@@ -1,8 +1,12 @@
 const mongoose = require('mongoose');
 
 const ShoppingListSchema = mongoose.Schema({
-    items: {
+    item: {
         type: String,
+        required: true,
+    },
+    quantity: {
+        type: Number,
         required: true
     }
 });
