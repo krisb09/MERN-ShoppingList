@@ -1,23 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import useForm from './useForm';
 
-function App() {
+const App = () => {
+  const { values, handleOnChange } = useForm();
+
+  const onSubmit = async () => {
+    
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <input
+          type="text"
+          placeholder="Enter item"
+          className="task-input"
+          name="item"
+          onChange={handleOnChange}
+          value={values.name}
+        />
+        <input
+          type="text"
+          placeholder="Enter quantity"
+          className="task-input"
+          name="description"
+          onChange={handleOnChange}
+          value={values.description}
+        />
+        <input type="submit" className='add-item' onClick={onSubmit} />
+      </div>
     </div>
   );
 }
