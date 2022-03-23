@@ -17,6 +17,11 @@ const ShoppingList = require('../backend/routes/ShoppingList')
 app.use('/shoppingList', ShoppingList)
 app.use('/read', ShoppingList)
 
+/*Browser Connection Test*/
+app.get('/', (req, res) => {
+    res.send('We\'re online on port 7001!!!');
+});
+
 /* DB CONNECTION */
 mongoose.connect('mongodb://localhost:27017/mern-ShoppingList')
 
