@@ -52,3 +52,73 @@ input.add-item {
   background-color: #c89666;
   color: #000;
 }
+
+input.add-item {
+  margin-left: 130px;
+}
+
+.list {
+  width: 30px;
+  background-color:#c89666;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #000000;
+  font-size: 20px;
+  margin-left: 500px;
+  padding-right: 15px;
+  margin-bottom: 50px;
+}
+
+td.list {
+  padding-left: 5px;
+}
+
+.edit {
+  color: #1b1905;
+  margin-right: 2px;
+  margin-left: 15px;
+  margin-top: 5px;
+  font-size: 18px;
+  width: 70px;
+  padding: 15px 15px;
+  border-radius: 10px;
+  border: 0;
+  background-color: #fe4646;
+  cursor: pointer;
+}
+
+.delete {
+  color: #1b1907;
+  margin-right: 1px;
+  margin-top: 5px;
+  font-size: 18px;
+  width: 70px;
+  padding: 15px 5px;
+  border-radius: 10px;
+  border: 0;
+  background-color: #fe4646;;
+  cursor: pointer;
+}
+
+
+.table {
+  padding-left: 15px;
+  padding-top: 20px;
+}
+
+.input {
+  background-color: #000;
+  color: black;
+}
+
+.item, .quantity {
+  background-color: #000;
+  color: #fff;
+  margin-top: 10px;
+  margin-left: 20px;
+  padding-left: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+
