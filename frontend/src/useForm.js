@@ -4,11 +4,13 @@ const useForm = (defaultValues = {}) => {
     const [ values, setValues] = useState(defaultValues);
 
     const handleOnChange = (e) => {
-        const { name, values } = e.target;
+        const { name, value } = e.target;
+
+        
 
         setValues({
             ...values,
-            [name]: values,
+            [name]: value,
         });
     };
 

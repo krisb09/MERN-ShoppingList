@@ -19,7 +19,7 @@ router.get('/read', async (req, res) => {
     }
 });
 
-router.post('/add', async (req, res) => {
+router.post('/create', async (req, res) => {
     const { item, quantity } = req.body
 
     const results = await CreateService({ item, quantity })
@@ -86,3 +86,5 @@ router.delete("/delete", async (req, res) => {
 });
 
 module.exports = router
+
+

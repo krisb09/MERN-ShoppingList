@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
 /* Important Routes */
-const ShoppingList = require('../backend/routes/ShoppingList')
+const ShoppingList = require('./routes/ShoppingList')
 
 app.use('/shoppingList', ShoppingList)
 app.use('/read', ShoppingList)
