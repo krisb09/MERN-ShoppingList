@@ -12,10 +12,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
 /* Important Routes */
-const ShoppingList = require('./routes/ShoppingList')
+const shoppingList = require('./routes/ShoppingList')
 
-app.use('/shoppingList', ShoppingList)
-app.use('/read', ShoppingList)
+app.use('/list', shoppingList);
+app.use('/read', shoppingList)
+
 
 /*Browser Connection Test*/
 app.get('/', (req, res) => {

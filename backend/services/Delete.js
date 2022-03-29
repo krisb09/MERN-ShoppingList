@@ -1,8 +1,8 @@
-const Items = require('../models/ShoppingList');
+const List = require('../models/ShoppingList');
 
 module.exports = async (_id) => {
     try {
-        await Items.deleteOne({ _id })
+        await List.deleteOne({ _id })
         return true
     } catch (err) {
         return false

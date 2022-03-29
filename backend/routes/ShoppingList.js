@@ -6,16 +6,16 @@ const ReadService = require('../services/Read');
 const UpdateService = require('../services/Update');
 const DeleteService = require('../services/Delete');
 
-router.get('/read', async (req, res) => {
+router.get('/read', async(req, res) => {
     const results = await ReadService()
-    
-    if (results) {
-        res
-            .status(200)
-            .send({
-                status: results,
-                message: 'Displaying Shopping List...'
-            })
+
+    if(results) {
+        res.status(200).send(results)
+    } else {
+        res.status(500).send({
+            status: results,
+            message: 'Not Reading List!'
+        })       
     }
 });
 

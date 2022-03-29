@@ -1,8 +1,8 @@
-const Items = require("../models/ShoppingList");
+const List = require("../models/ShoppingList");
 
 module.exports = async (dataObj) => {
   try {
-    await Items.insertMany(dataObj);
+    await List.insertMany(dataObj);
     return true;
   } catch (err) {
     return false;
